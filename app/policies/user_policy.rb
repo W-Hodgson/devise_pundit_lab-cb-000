@@ -8,6 +8,6 @@ class UserPolicy < ApplicationPolicy
   end
 
   def update?
-
+    user.admin? || record == user
   end
 end

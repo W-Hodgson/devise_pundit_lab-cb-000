@@ -10,4 +10,8 @@ class UserPolicy < ApplicationPolicy
   def update?
     user.admin? || record == user
   end
+
+  def destroy?
+
+  end
 end
